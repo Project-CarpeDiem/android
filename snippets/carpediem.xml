@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Project-CarpeDiem overrides - lineage-24.0 -->
+  <!-- Core build system -->
+  <remove-project path="build/make" />
+  <project path="build/make" name="Project-CarpeDiem/android_build" groups="pdk,sysui-studio" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <remove-project path="build/soong" />
+  <project path="build/soong" name="Project-CarpeDiem/android_build_soong" groups="pdk,tradefed,sysui-studio" />
+
+  <!-- Frameworks -->
+  <remove-project path="frameworks/base" />
+  <project path="frameworks/base" name="Project-CarpeDiem/android_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
+
+  <!-- Settings + CarpeDiem features -->
+  <remove-project path="packages/apps/Settings" />
+  <project path="packages/apps/Settings" name="Project-CarpeDiem/android_packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc,sysui-studio" />
+  <remove-project path="packages/apps/Updater" />
+  <project path="packages/apps/Updater" name="Project-CarpeDiem/android_packages_apps_Updater" />
+  <remove-project path="packages/apps/LineageParts" />
+  <project path="packages/apps/LineageParts" name="Project-CarpeDiem/android_packages_apps_LineageParts" />
+
+  <!-- Lineage platform libs (keep tracking CarpeDiem forks) -->
+  <remove-project path="hardware/lineage/compat" />
+  <project path="hardware/lineage/compat" name="Project-CarpeDiem/android_hardware_lineage_compat" />
+  <remove-project path="hardware/lineage/interfaces" />
+  <project path="hardware/lineage/interfaces" name="Project-CarpeDiem/android_hardware_lineage_interfaces" />
+  <remove-project path="lineage-sdk" />
+  <project path="lineage-sdk" name="Project-CarpeDiem/android_lineage-sdk" />
+  <remove-project path="vendor/lineage" />
+  <project path="vendor/lineage" name="Project-CarpeDiem/android_vendor_lineage" />
+
+  <!-- CarpeDiem identity (new, not a Lineage override) -->
+  <project path="vendor/carpediem" name="Project-CarpeDiem/android_vendor_carpediem" />
+</manifest>
