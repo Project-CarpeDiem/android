@@ -36,6 +36,4 @@
   <remove-project path="vendor/lineage" />
   <project path="vendor/lineage" name="Project-CarpeDiem/android_vendor_lineage" />
 
-  <!-- CarpeDiem identity (new, not a Lineage override) -->
-  <project path="vendor/carpediem" name="Project-CarpeDiem/android_vendor_carpediem" />
 </manifest>
