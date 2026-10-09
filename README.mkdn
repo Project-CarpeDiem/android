@@ -60,9 +60,12 @@ Build Configuration:
 --------------------
 Choose your device configuration:
 ```
-lunch lineage_$device-$buildtype
+lunch lineage_$device-$release-$buildtype
 ```
-Replace $device with your device codename and $buildtype with your prefered build type (user, userdebug or eng).
+Replace $device with your device codename, $release with the target release
+(cp2a, see `vendor/lineage/vars/aosp_target_release`) and $buildtype with your
+prefered build type (user, userdebug or eng). Prefer `carpe` above, it handles
+this for you.
 Compilation:
 ------------
 Start the compilation process:
