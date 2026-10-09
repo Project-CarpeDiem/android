@@ -50,7 +50,6 @@
   <project path="vendor/gms" name="Project-CarpeDiem/android_vendor_gms" revision="seventeen" clone-depth="1" />
 
   <!-- Pixel Settings + SystemUI (mirror Rising paths) -->
-  <project path="vendor/google/apps/SystemUIGoogle" name="Project-CarpeDiem/android_vendor_google_apps_SystemUIGoogle" revision="seventeen" />
 
   <!-- Recovery -->
   <remove-project path="bootable/recovery" />
