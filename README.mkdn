@@ -19,12 +19,16 @@ for the repositories CarpeDiem forks; everything else tracks upstream.
 
 Build Flags
 -----------
+```
 # Maintainer Name
 CARPEDIEM_MAINTAINER := "YourInput" (Default: Unknown)
+
 # Whether Including GMS Prebuilts
 WITH_GMS := true/false (Default: true)
+
 # GMS Flavor
 GMS_MAKEFILE := gms_mini.mk/gms_full/gms_pico (Default: gms_mini.mk)
+```
 
 Setup Environment:
 ------------------
