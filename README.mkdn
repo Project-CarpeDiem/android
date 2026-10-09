@@ -28,6 +28,9 @@ WITH_GMS := true/false (Default: true)
 
 # GMS Flavor
 GMS_MAKEFILE := gms_mini.mk/gms_full/gms_pico (Default: gms_mini.mk)
+
+# Official Build
+CARPEDIEM_OFFICIAL := true/false (Default: false)
 ```
 
 Setup Environment:
