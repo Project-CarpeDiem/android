@@ -31,6 +31,12 @@ GMS_MAKEFILE := gms_mini.mk/gms_full/gms_pico (Default: gms_mini.mk)
 
 # Official Build
 CARPEDIEM_OFFICIAL := true/false (Default: false)
+
+# Pixel Launcher As Default (GMS builds only)
+TARGET_DEFAULT_PIXEL_LAUNCHER := true/false (Default: true)
+
+# Background Blur Capability
+TARGET_ENABLE_BLUR := true/false (Default: true)
 ```
 
 Custom Commands
