@@ -21,3 +21,15 @@ Submitting patches
 ------------------
 Patches are always welcome! Please submit them via GitHub pull requests
 against the `lineage-24.0` branch of the relevant `Project-CarpeDiem` repository.
+
+Build flags
+-----------
+
+- `WITH_GMS` (default `true`): GMS prebuilts included. Export
+  `WITH_GMS=false` for a vanilla build.
+- `GMS_MAKEFILE` (default `gms_mini.mk`): GMS flavor. Also supports
+  `gms_full` and `gms_pico`.
+- `CARPEDIEM_MAINTAINER`: device maintainer name, shown in
+  `ro.carpediem.maintainer`. Export it (e.g.
+  `export CARPEDIEM_MAINTAINER=Name`) or set `CARPEDIEM_MAINTAINER := Name`
+  in the device makefile after inherit.
