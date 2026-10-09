@@ -8,13 +8,13 @@ To get started with CarpeDiem, you'll need to get familiar with [Source Control 
 
 To initialize your local repository using the CarpeDiem trees, use a command like this:
 ```
-repo init -u https://github.com/Project-CarpeDiem/android.git -b lineage-24.0 --git-lfs
+repo init -u https://github.com/Project-CarpeDiem/android.git -b seventeen --git-lfs
 ```
 Then to sync up:
 ```
 repo sync
 ```
-CarpeDiem is based on LineageOS `lineage-24.0`. See `snippets/carpediem.xml`
+CarpeDiem is based on LineageOS `lineage-24.0` (tracked on branch `seventeen`). See `snippets/carpediem.xml`
 for the repositories CarpeDiem forks; everything else tracks upstream.
 
 Build Flags
@@ -57,4 +57,4 @@ m bacon -j$(nproc --all)
 Submitting patches
 ------------------
 Patches are always welcome! Please submit them via GitHub pull requests
-against the `lineage-24.0` branch of the relevant `Project-CarpeDiem` repository.
+against the `seventeen` branch of the relevant `Project-CarpeDiem` repository.

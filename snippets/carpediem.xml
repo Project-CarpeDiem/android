@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <!-- Project-CarpeDiem overrides - lineage-24.0 -->
+  <!-- Project-CarpeDiem overrides - seventeen (tracks LineageOS lineage-24.0) -->
   <!-- Core build system -->
   <remove-project path="build/make" />
   <project path="build/make" name="Project-CarpeDiem/android_build" groups="pdk,sysui-studio" >
