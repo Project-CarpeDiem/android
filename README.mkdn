@@ -17,19 +17,40 @@ repo sync
 CarpeDiem is based on LineageOS `lineage-24.0`. See `snippets/carpediem.xml`
 for the repositories CarpeDiem forks; everything else tracks upstream.
 
+Build Flags
+-----------
+# Maintainer Name
+CARPEDIEM_MAINTAINER := "YourInput" (Default: Unknown)
+# Whether Including GMS Prebuilts
+WITH_GMS := true/false (Default: true)
+# GMS Flavor
+GMS_MAKEFILE := gms_mini.mk/gms_full/gms_pico (Default: gms_mini.mk)
+
+Setup Environment:
+------------------
+Navigate to the root directory of Project-CarpeDiem:
+```
+cd path/to/source
+```
+Run the environment setup script:
+```
+. build/envsetup.sh
+```
+Build Configuration:
+--------------------
+Choose your device configuration:
+```
+lunch lineage_$device-$buildtype
+```
+Replace $device with your device codename and $buildtype with your prefered build type (user, userdebug or eng).
+Compilation:
+------------
+Start the compilation process:
+```
+m bacon -j$(nproc --all)
+```
+
 Submitting patches
 ------------------
 Patches are always welcome! Please submit them via GitHub pull requests
 against the `lineage-24.0` branch of the relevant `Project-CarpeDiem` repository.
-
-Build flags
------------
-
-- `WITH_GMS` (default `true`): GMS prebuilts included. Export
-  `WITH_GMS=false` for a vanilla build.
-- `GMS_MAKEFILE` (default `gms_mini.mk`): GMS flavor. Also supports
-  `gms_full` and `gms_pico`.
-- `CARPEDIEM_MAINTAINER`: device maintainer name, shown in
-  `ro.carpediem.maintainer`. Export it (e.g.
-  `export CARPEDIEM_MAINTAINER=Name`) or set `CARPEDIEM_MAINTAINER := Name`
-  in the device makefile after inherit.
