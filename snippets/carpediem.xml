@@ -53,10 +53,6 @@
   <project path="vendor/google/apps/SettingsGoogle" name="Project-CarpeDiem/android_vendor_google_apps_SettingsGoogle" revision="seventeen" />
   <project path="vendor/google/apps/SystemUIGoogle" name="Project-CarpeDiem/android_vendor_google_apps_SystemUIGoogle" revision="seventeen" />
 
-  <!-- AV framework (Dolby + audio hardening) -->
-  <remove-project path="frameworks/av" />
-  <project path="frameworks/av" name="Project-CarpeDiem/android_frameworks_av" revision="seventeen" />
-
   <!-- Recovery -->
   <remove-project path="bootable/recovery" />
   <project path="bootable/recovery" name="Project-CarpeDiem/android_bootable_recovery" revision="seventeen" />
