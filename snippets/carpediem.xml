@@ -49,4 +49,11 @@
   <!-- Prebuilt GMS (tracks upstream branch naming) -->
   <project path="vendor/gms" name="Project-CarpeDiem/android_vendor_gms" revision="seventeen" clone-depth="1" />
 
+  <!-- Pixel-style resources -->
+  <project path="vendor/pixel-style" name="Project-CarpeDiem/android_vendor_pixel-style" revision="seventeen" />
+
+  <!-- AV framework (Dolby + audio hardening) -->
+  <remove-project path="frameworks/av" />
+  <project path="frameworks/av" name="Project-CarpeDiem/android_frameworks_av" revision="seventeen" />
+
 </manifest>
