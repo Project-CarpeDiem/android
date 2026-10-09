@@ -46,4 +46,7 @@
   <remove-project path="packages/apps/Backgrounds" />
   <project path="packages/apps/Backgrounds" name="Project-CarpeDiem/android_packages_apps_Backgrounds" />
 
+  <!-- Prebuilt GMS (tracks upstream branch naming) -->
+  <project path="vendor/gms" name="Project-CarpeDiem/android_vendor_gms" revision="seventeen" clone-depth="1" />
+
 </manifest>
