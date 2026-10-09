@@ -60,4 +60,8 @@
   <remove-project path="frameworks/av" />
   <project path="frameworks/av" name="Project-CarpeDiem/android_frameworks_av" revision="seventeen" />
 
+  <!-- Recovery -->
+  <remove-project path="bootable/recovery" />
+  <project path="bootable/recovery" name="Project-CarpeDiem/android_bootable_recovery" revision="seventeen" />
+
 </manifest>
