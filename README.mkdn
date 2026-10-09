@@ -24,13 +24,26 @@ Build Flags
 CARPEDIEM_MAINTAINER := "YourInput" (Default: Unknown)
 
 # Whether Including GMS Prebuilts
-WITH_GMS := true/false (Default: true)
+WITH_GMS := true/false (Default: false)
 
 # GMS Flavor
 GMS_MAKEFILE := gms_mini.mk/gms_full/gms_pico (Default: gms_mini.mk)
 
 # Official Build
 CARPEDIEM_OFFICIAL := true/false (Default: false)
+```
+
+Custom Commands
+---------------
+Source the tree first (`. build/envsetup.sh`), then:
+```
+# Configure: carpe <device> [user|userdebug|eng] [gms|mini|full|pico|va]
+# Default package is vanilla. GMS variants: gms/mini, full, pico.
+carpe Galaxian userdebug gms
+
+# Build: cb [-b|-fb|-br] [-j<num>] [user|eng|userdebug] [device]
+# -b: bacon, -fb: fastboot package, -br: brunch. Plain `cb` runs `m`.
+cb -b -j$(nproc --all)
 ```
 
 Setup Environment:
