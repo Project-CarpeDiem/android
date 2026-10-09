@@ -12,39 +12,39 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
   <remove-project path="build/soong" />
-  <project path="build/soong" name="Project-CarpeDiem/android_build_soong" groups="pdk,tradefed,sysui-studio" />
+  <project path="build/soong" name="Project-CarpeDiem/android_build_soong" revision="seventeen" groups="pdk,tradefed,sysui-studio" />
 
   <!-- Frameworks -->
   <remove-project path="frameworks/base" />
-  <project path="frameworks/base" name="Project-CarpeDiem/android_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
+  <project path="frameworks/base" name="Project-CarpeDiem/android_frameworks_base" revision="seventeen" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
 
   <!-- Settings + CarpeDiem features -->
   <remove-project path="packages/apps/Settings" />
-  <project path="packages/apps/Settings" name="Project-CarpeDiem/android_packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc,sysui-studio" />
+  <project path="packages/apps/Settings" name="Project-CarpeDiem/android_packages_apps_Settings" revision="seventeen" groups="pdk-fs,pdk-cw-tvc,sysui-studio" />
   <remove-project path="packages/apps/Updater" />
-  <project path="packages/apps/Updater" name="Project-CarpeDiem/android_packages_apps_Updater" />
+  <project path="packages/apps/Updater" name="Project-CarpeDiem/android_packages_apps_Updater" revision="seventeen" />
   <remove-project path="packages/apps/LineageParts" />
-  <project path="packages/apps/LineageParts" name="Project-CarpeDiem/android_packages_apps_LineageParts" />
+  <project path="packages/apps/LineageParts" name="Project-CarpeDiem/android_packages_apps_LineageParts" revision="seventeen" />
 
   <!-- Lineage platform libs (keep tracking CarpeDiem forks) -->
   <remove-project path="hardware/lineage/compat" />
-  <project path="hardware/lineage/compat" name="Project-CarpeDiem/android_hardware_lineage_compat" />
+  <project path="hardware/lineage/compat" name="Project-CarpeDiem/android_hardware_lineage_compat" revision="seventeen" />
   <remove-project path="hardware/lineage/interfaces" />
-  <project path="hardware/lineage/interfaces" name="Project-CarpeDiem/android_hardware_lineage_interfaces" />
+  <project path="hardware/lineage/interfaces" name="Project-CarpeDiem/android_hardware_lineage_interfaces" revision="seventeen" />
   <remove-project path="lineage-sdk" />
-  <project path="lineage-sdk" name="Project-CarpeDiem/android_lineage-sdk" />
+  <project path="lineage-sdk" name="Project-CarpeDiem/android_lineage-sdk" revision="seventeen" />
   <remove-project path="vendor/lineage" />
-  <project path="vendor/lineage" name="Project-CarpeDiem/android_vendor_lineage" />
+  <project path="vendor/lineage" name="Project-CarpeDiem/android_vendor_lineage" revision="seventeen" />
 
   <!-- Branding: setup, overlays, customizer, wallpapers -->
   <remove-project path="packages/apps/SetupWizard" />
-  <project path="packages/apps/SetupWizard" name="Project-CarpeDiem/android_packages_apps_SetupWizard" />
+  <project path="packages/apps/SetupWizard" name="Project-CarpeDiem/android_packages_apps_SetupWizard" revision="seventeen" />
   <remove-project path="packages/overlays/Lineage" />
-  <project path="packages/overlays/Lineage" name="Project-CarpeDiem/android_packages_overlays_Lineage" />
+  <project path="packages/overlays/Lineage" name="Project-CarpeDiem/android_packages_overlays_Lineage" revision="seventeen" />
   <remove-project path="packages/apps/LineageCustomizer" />
-  <project path="packages/apps/LineageCustomizer" name="Project-CarpeDiem/android_packages_apps_LineageCustomizer" />
+  <project path="packages/apps/LineageCustomizer" name="Project-CarpeDiem/android_packages_apps_LineageCustomizer" revision="seventeen" />
   <remove-project path="packages/apps/Backgrounds" />
-  <project path="packages/apps/Backgrounds" name="Project-CarpeDiem/android_packages_apps_Backgrounds" />
+  <project path="packages/apps/Backgrounds" name="Project-CarpeDiem/android_packages_apps_Backgrounds" revision="seventeen" />
 
   <!-- Prebuilt GMS (tracks upstream branch naming) -->
   <project path="vendor/gms" name="Project-CarpeDiem/android_vendor_gms" revision="seventeen" clone-depth="1" />
