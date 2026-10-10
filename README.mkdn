@@ -37,6 +37,12 @@ TARGET_DEFAULT_PIXEL_LAUNCHER := true/false (Default: true)
 
 # Background Blur Capability
 TARGET_ENABLE_BLUR := true/false (Default: true)
+
+# AOSP SetupWizard On GMS Builds (default: generic Google wizard)
+TARGET_USES_AOSP_SETUPWIZARD := true/false (Default: false)
+
+# Google PartnerSetup On GMS Builds (carrier provisioning)
+TARGET_INCLUDES_PARTNERSETUP := true/false (Default: false)
 ```
 
 Custom Commands
