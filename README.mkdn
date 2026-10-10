@@ -23,6 +23,9 @@ Build Flags
 # Maintainer Name
 CARPEDIEM_MAINTAINER := "YourInput" (Default: Unknown)
 
+# Chipset Marketing Name For About Specs
+CARPEDIEM_CHIPSET := "Dimensity 7300 Pro" (Default: board platform)
+
 # Whether Including GMS Prebuilts
 WITH_GMS := true/false (Default: false)
 
