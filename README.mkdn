@@ -1,6 +1,18 @@
 Project-CarpeDiem
 =================
 
+CarpeDiem is a clean and stable Android experience, built for everyday use.
+Simple, fast, and respectful of your device. Version 1.0, codename Initium,
+based on LineageOS `lineage-24.0` (Android 17).
+
+Highlights
+----------
+* CarpeDiem versioning (`1.0 - Initium`), maintainer and package-type display
+* Rising-style blurred bottom search bar, time-based greetings, wallpaper device card
+* Ornatus customizations hub, QuickSwitch multi-launcher support
+* Pixel apps and launcher on GMS builds, vanilla by default
+* Dual shade preference, background blur, advanced restart by default
+
 Getting started
 ---------------
 
@@ -95,3 +107,14 @@ Submitting patches
 ------------------
 Patches are always welcome! Please submit them via GitHub pull requests
 against the `seventeen` branch of the relevant `Project-CarpeDiem` repository.
+
+Credits
+-------
+CarpeDiem stands on the work of many. Base and platform: LineageOS, AOSP/Google.
+Direct contributions worked in from: RisingOS-Revived (GMS tree, Personalizations
+base for Ornatus, QuickSwitch core, recovery base, Lawnchair prebuilts, search
+and About inspirations), Evolution-X (pixel-style resources), Pixelify-AOSP
+(Launcher3 base), Project Infinity X (build command format, greetings and
+device-card implementation), MaxxOS-AOSP (About port, search bar patch, shade
+and blur flags). Evaluated along the way: Lunaris-AOSP, VoltageOS,
+The-Clover-Project. Device maintainers and testers make releases possible.
