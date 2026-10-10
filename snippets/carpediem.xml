@@ -45,6 +45,7 @@
   <project path="packages/apps/LineageCustomizer" name="Project-CarpeDiem/android_packages_apps_LineageCustomizer" revision="seventeen" />
   <remove-project path="packages/apps/Backgrounds" />
   <project path="packages/apps/Backgrounds" name="Project-CarpeDiem/android_packages_apps_Backgrounds" revision="seventeen" />
+  <project path="packages/apps/Ornatus" name="Project-CarpeDiem/packages_apps_Ornatus" revision="seventeen" />
 
   <!-- Prebuilt GMS (tracks upstream branch naming) -->
   <project path="vendor/gms" name="Project-CarpeDiem/android_vendor_gms" revision="seventeen" clone-depth="1" />
