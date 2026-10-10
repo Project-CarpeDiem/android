@@ -46,7 +46,6 @@ TARGET_USES_AOSP_SETUPWIZARD := true/false (Default: false)
 
 # Google PartnerSetup On GMS Builds (carrier provisioning)
 TARGET_INCLUDES_PARTNERSETUP := true/false (Default: false)
-```
 
 # Skip Camera Apps
 PRODUCT_NO_CAMERA := true/false (Default: false)
