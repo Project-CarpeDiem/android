@@ -21,6 +21,8 @@
   <!-- Settings + CarpeDiem features -->
   <remove-project path="packages/apps/Settings" />
   <project path="packages/apps/Settings" name="Project-CarpeDiem/android_packages_apps_Settings" revision="seventeen" groups="pdk-fs,pdk-cw-tvc,sysui-studio" />
+  <remove-project path="packages/apps/Launcher3" />
+  <project path="packages/apps/Launcher3" name="Project-CarpeDiem/android_packages_apps_Launcher3" revision="seventeen" groups="pdk-fs,sysui-studio,pdk-cw-tvc" />
   <remove-project path="packages/apps/Updater" />
   <project path="packages/apps/Updater" name="Project-CarpeDiem/android_packages_apps_Updater" revision="seventeen" />
   <remove-project path="packages/apps/LineageParts" />
